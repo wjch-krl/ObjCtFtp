@@ -16,6 +16,8 @@
 		57F581E219B213E300562AAB /* libObjCtFtp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F581CA19B213E300562AAB /* libObjCtFtp.a */; };
 		57F581E819B213E300562AAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57F581E619B213E300562AAB /* InfoPlist.strings */; };
 		57F581EA19B213E300562AAB /* ObjCtFtpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F581E919B213E300562AAB /* ObjCtFtpTests.m */; };
+		57F581F619B2152B00562AAB /* tftpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F581F419B2152B00562AAB /* tftpc.c */; };
+		57F581F719B2152B00562AAB /* tftpd.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F581F519B2152B00562AAB /* tftpd.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		57F581E519B213E300562AAB /* ObjCtFtpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjCtFtpTests-Info.plist"; sourceTree = "<group>"; };
 		57F581E719B213E300562AAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57F581E919B213E300562AAB /* ObjCtFtpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCtFtpTests.m; sourceTree = "<group>"; };
+		57F581F319B2152B00562AAB /* tftp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tftp.h; sourceTree = "<group>"; };
+		57F581F419B2152B00562AAB /* tftpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tftpc.c; sourceTree = "<group>"; };
+		57F581F519B2152B00562AAB /* tftpd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tftpd.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,9 @@
 			children = (
 				57F581D219B213E300562AAB /* ObjCtFtp.h */,
 				57F581D419B213E300562AAB /* ObjCtFtp.m */,
+				57F581F319B2152B00562AAB /* tftp.h */,
+				57F581F419B2152B00562AAB /* tftpc.c */,
+				57F581F519B2152B00562AAB /* tftpd.c */,
 				57F581D019B213E300562AAB /* Supporting Files */,
 			);
 			path = ObjCtFtp;
@@ -223,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F581F719B2152B00562AAB /* tftpd.c in Sources */,
 				57F581D519B213E300562AAB /* ObjCtFtp.m in Sources */,
+				57F581F619B2152B00562AAB /* tftpc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
